@@ -27,8 +27,7 @@
             <td>
                 <a th:href="@{/books/edit/{id}(id=${book.id})}">Edit</a>
                 <a th:href="@{/books/delete/{id}(id=${book.id})}"
-                   onclick="return confirm('Are you sure?')">Delete</a>
-
+                   onclick="return confirm('Are you sure? Delete now.')">Delete</a>
             </td>
 
         </tr>
