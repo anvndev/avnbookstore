@@ -40,6 +40,11 @@
                 Add Book
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/books/category">
+                Category
+            </a>
+        </li>
         <li sec:authorize="isAuthenticated()">
             <form th:action="@{/logout}" method="post">
                 <button class="btn btn-outline-danger"
@@ -62,7 +67,7 @@
 <footer th:fragment="footer" class="footer mt-auto py-3 bg-light">
     <div class="container text-center">Copyright &copy;
         <span th:text="${#dates.year(#dates.createNow())}"></span>
-        <a href="https://www.hutech.edu.vn/">HUTECH Education</a>
+        <a href="https://anvndev.cf/">An Van Nguyen</a>
     </div>
     <script th:src="@{/js/bootstrap.min.js}"></script>
     <script th:src="@{/js/jquery-3.7.0.min.js}"></script>

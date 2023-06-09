@@ -1,6 +1,7 @@
 package bookstore.avn.avnbookstore.validator.annotation;
 
-import bookstore.avn.avnbookstore.validator.ValiUserIdValidator;
+import bookstore.avn.avnbookstore.validator.ValidUsernameValidator;
+import bookstore.avn.avnbookstore.validator.ValidUserIdValidator;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
@@ -19,5 +20,5 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 public @interface ValidUserId {
     String message() default "Invalid User ID";
     Class<?>[] groups() default {};
-    Class<? extends Payload>[] Payload() default {};
+    Class<? extends Payload>[] payload() default {};
 }
